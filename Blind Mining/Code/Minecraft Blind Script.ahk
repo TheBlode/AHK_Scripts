@@ -3,11 +3,25 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+; Blind Mining Script!
+; Written by The_Blode
+; 22/05/2020
+; A script that attempts to help blind users play Minecraft!
+
 ; Declare variables
 left_counter = 1
 right_counter = 1
 pixel_shift = 50
 refocus_counter = 0
+
+; Welcome user to Blind Mining!
+SoundPlay, sounds/welcome.mp3, 1
+
+; Play instructions on how to use the script
+SoundPlay, sounds/instructions.mp3, 1
+
+; Let's play Minecraft!
+SoundPlay, sounds/play.mp3, 1
 
 ; Remap left arrow key for turning left
 Left::
