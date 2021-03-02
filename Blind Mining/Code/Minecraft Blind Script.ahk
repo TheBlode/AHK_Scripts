@@ -46,7 +46,7 @@ Loop
 	; Play clicky sound
 	IfEqual, colour, %lastColour%
 	{
-		SoundPlay, sounds/obstable.mp3
+		SoundPlay, sounds/obstacle.mp3, 1
 	}
 
 	; Write pixel colour to file
